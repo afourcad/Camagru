@@ -1,0 +1,80 @@
+html, body {
+	height: 100%;
+	margin: 0; padding: 0;
+}
+body {
+	display : table;
+	width: 100%;
+}
+footer {
+	display : table-row;
+    height: 100px; /* à titre d'exemple */
+    width: 100%;
+    text-align: right;
+    /*background-color: #efd807;*/
+    height: 50px;
+}
+
+footer .copyright{
+    padding: 14px 16px;
+}
+
+header{
+    width: 100%;
+    background-color: #efd807;
+    height: 50px;
+    overflow: hidden;
+}
+
+header h1{
+    float: left;
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding-left: 16px;
+}
+
+.topnav a{
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #e8d206;
+    color: white;
+  }
+
+/* .topnav a.active {
+    background-color: #dec806;
+    color: white;
+} */
+
+.formArea{
+    background-color: #f4ee84;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    /* text-align: center; */
+}
+
+.formArea h2{
+    margin-top: 40px;
+}
+.formArea input{
+    padding: 10px 8px;
+    margin: 5px;
+}
+
+.formArea h2{
+    color: white;
+    /* padding-top: 10px; */
+}
+
+.formArea div{
+    /* padding-bottom: 10px; */
+}
