@@ -15,12 +15,17 @@
     <form action="index.php?action=createUser" class="formArea" method="post">
         <input type="text" id="name" name="name" placeholder="Votre login">
         <input type="text" id="mail" name="mail" placeholder="Votre mail">
-        <input type="text" id="mail2" name="mail2" placeholder="Retapez votre mail">
         <input type="password" id="pass" name="pass" placeholder="Votre mot de passe">
         <input type="password" id="pass2" name="pass2" placeholder="Retapez votre passe">
-        <input type="submit">
+        <ul class="fi_checkPwd">
+          <li  id="checkPassMinChar">Au moins 8 caractères</li>
+          <li id ="checkPassMaj">Une majuscule</li>
+          <li id="checkPassNum">Un chiffre</li>
+        </ul>
+        <input type="submit" id="inscritptionButton">
     </form>
 </div>
+<script src="public/js/inscriptionCheck.js"></script>
 <?php $content = ob_get_clean(); ?>
 
 <?php require('view/front/template.php');

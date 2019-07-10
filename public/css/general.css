@@ -75,6 +75,16 @@ header h1{
     /* padding-top: 10px; */
 }
 
-.formArea div{
-    /* padding-bottom: 10px; */
+
+
+.fi_checkPwd{
+    list-style: none;
+    color:red;
+    margin: 0;
+    font-size: 11px;
+    padding-left: 0px;
+}
+
+.fi_checkPwd li:before{
+    content: "\1f5f9 "; /*Check*/
 }
