@@ -11,6 +11,15 @@
 <?php require('header.php'); ?>
 
 <?php ob_start(); ?>
-    <h1>Je suis connecté</h1>
+<main>
+  <div class="leftVideoArea">
+    <video id="video"></video>
+    <canvas id="canvas"></canvas>
+    <button id="startbutton">Take photo</button>
+  </div>
+  <div class="rightGalerie">
+  </div>
+</main>
+  <script src="public/js/webcam.js"></script>
 <?php $content = ob_get_clean(); ?>
 <?php require('view/front/template.php');

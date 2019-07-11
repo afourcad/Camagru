@@ -4,7 +4,7 @@ html, body {
 }
 body {
 	display : table;
-	width: 100%;
+    width: 100%;
 }
 footer {
 	display : table-row;
@@ -87,4 +87,36 @@ header h1{
 
 .fi_checkPwd li:before{
     content: "\1f5f9 "; /*Check*/
+}
+
+main{
+    background-color: #f4ee84;
+    display: flex;
+    height: 100%;
+}
+
+.leftVideoArea , .rightGalerie{
+    border: solid blue 5px;
+    border-radius: 30px;
+}
+
+.leftVideoArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 80%;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+.leftVideoArea > *{
+    padding: 5px 0px;
+}
+
+.rightGalerie{
+    width: 30%;
+    height: 80%;
+    padding: 50px 0px;
+    margin: auto;
 }

@@ -22,7 +22,7 @@
           <li id ="checkPassMaj">Une majuscule</li>
           <li id="checkPassNum">Un chiffre</li>
         </ul>
-        <input type="submit" id="inscritptionButton">
+        <input type="submit" onclick="proceedInscription()">
     </form>
 </div>
 <script src="public/js/inscriptionCheck.js"></script>
