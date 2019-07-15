@@ -1,8 +1,8 @@
 <?php
-if(!isset($_SESSION)) 
-{ 
-	session_start(); 
-} 
+if(!isset($_SESSION))
+{
+	session_start();
+}
 
 require('controller/front.php');
 
@@ -46,15 +46,12 @@ try{
         //Sinon si l'action est 'Inscription'
         elseif(isset($_GET['action']) && $_GET['action'] == 'inscription'){
             //aller a inscription
-            require('./view/front/insciption.php');
+            require('./view/front/inscription.php');
         }
         elseif(isset($_GET['action']) && $_GET['action'] == 'createUser'){
             if(!empty($_POST['name']) && !empty($_POST['mail'])
-            && !empty($_POST['mail2']) && !empty($_POST['pass'])
+            && !empty($_POST['pass'])
             && !empty($_POST['pass2'])){
-                if (!checkEqualString($_POST['mail'], $_POST['mail2'])){
-                    throw new Exception('Les adresses mail ne correspondent pas !');
-                }
                 if (!checkEqualString($_POST['pass'], $_POST['pass2'])){
                     throw new Exception('Les mots de passe ne correspondent pas !');
                 }

@@ -25,15 +25,6 @@ function disconnect(){
     header('Location: index.php');
 }
 
-function checkEqualString($str1, $str2){
-    if ($str1 === $str2){
-        return true;
-    }
-    else{
-        return false;
-    }
-}
-
 function createUser($name, $mail, $pass){
     $userManager = new UserManager();
     $user = $userManager->searchUser($name, $mail);
