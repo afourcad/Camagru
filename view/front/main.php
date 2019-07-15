@@ -14,11 +14,11 @@
 <main>
   <div class="leftVideoArea">
     <div id="camera" ondrop="drop(event)" ondragover="allowDrop(event)">
-      <canvas id="canva_filters" width="400px" height="300px"></canvas>
       <video id="video" width="400px" height="300px" autoplay></video>
+      <canvas id="canvas_filters" width="400px" height="300px"></canvas>
       <canvas id="canvas" width="400px" height="300px"></canvas>
-      <!-- <img src="../../img/empty.png" style="width:100%;"> -->
     </div>
+    <button id="startbutton">Click</button>
   </div>
   <div class="rightGalerie">
   </div>

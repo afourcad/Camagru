@@ -6,6 +6,7 @@
 		canvas       = document.querySelector('#canvas'),
 		photo        = document.querySelector('#photo'),
 		startbutton  = document.querySelector('#startbutton'),
+		canvasFilter = document.getElementById('canvas_filters'),
 		width = 400,
 		height = 0;
 
@@ -13,6 +14,9 @@
 						   navigator.webkitGetUserMedia ||
 						   navigator.mozGetUserMedia ||
 						   navigator.msGetUserMedia);
+
+	// canvasFilter.style.display = "none";
+	// canvas.style.display = "none";
 
 	navigator.getMedia(
 	  {
@@ -52,7 +56,17 @@
 	}
 
 	startbutton.addEventListener('click', function(ev){
-		takepicture();
+		if(startbutton.innerHTML == "Click"){
+			canvasFilter.style.display = "none";
+			video.style.display = "none";
+			startbutton.innerHTML = "Reset";
+			takepicture();
+		}
+		else if(startbutton.innerHTML == "Reset"){
+			canvasFilter.style.display = "block";
+			video.style.display = "block";
+			startbutton.innerHTML = "Click";
+		}
 	  ev.preventDefault();
 	}, false);
 
