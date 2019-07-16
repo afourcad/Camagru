@@ -15,9 +15,6 @@
 						   navigator.mozGetUserMedia ||
 						   navigator.msGetUserMedia);
 
-	// canvasFilter.style.display = "none";
-	// canvas.style.display = "none";
-
 	navigator.getMedia(
 	  {
 		video: true,
@@ -70,4 +67,14 @@
 	  ev.preventDefault();
 	}, false);
 
+
+
+		window.onload = function() {
+			var ctx = canvasFilter.getContext("2d");
+			  var img = new Image();
+			img.onload = function () {
+			  ctx.drawImage(img, 0, 0, 400, 300);
+		  }
+		  img.src = "data/img/chapeau.png";
+		  }
 	})();
