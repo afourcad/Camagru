@@ -1,11 +1,11 @@
 <?php $title = "Inscription";?>
 
 <?php ob_start(); ?>
-<div class="topnav">
+<nav class="topnav">
   <a href="#home">Galerie</a>
   <a class="active" href="index.php?action=inscription">Inscription</a>
   <a href="index.php?action=connection">Connection</a>
-</div>
+</nav>
 <?php $content = ob_get_clean(); ?>
 <?php require('header.php'); ?>
 

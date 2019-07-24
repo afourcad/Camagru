@@ -10,6 +10,7 @@ body {
     align-items: center;
     color: black;
 }
+
 footer {
     height: 100px; /* à titre d'exemple */
     width: 100%;
@@ -24,16 +25,37 @@ footer .copyright{
     /* color: white; */
 }
 
-header{
+header {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: #efd807;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 0.3vw;
+}
+
+/* nav {
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}  */
+
+/* header{
     width: 100%;
     background-color: #efd807;
-    height: 50px;
+    height: 70px;
     overflow: hidden;
 }
 
 header h1{
     float: left;
-    /* color: white; */
     margin: auto;
     text-align: center;
     padding-left: 16px;
@@ -44,15 +66,14 @@ header h1{
     float: right;
     color: black;
     text-align: center;
-    padding: 15px 16px;
+    padding: 25px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 
 .topnav a:hover {
     background-color: #e8d206;
-    /* color: white; */
-  }
+  } */
 
 /* .topnav a.active {
     background-color: #dec806;
@@ -81,10 +102,10 @@ header h1{
     margin: 5px;
 }
 
-.formArea h2{
-    /* color: white; */
-    /* padding-top: 10px; */
-}
+/* .formArea h2{
+    color: white;
+    padding-top: 10px;
+} */
 
 
 
@@ -144,7 +165,6 @@ main{
 
 #canvas_filters {
     position: absolute;
-    background-color: rgba(255, 0, 0, 0.5);
     z-index: 2;
 }
 
@@ -155,4 +175,19 @@ main{
 
 #canvas {
     z-index :3;
+}
+
+#saveButton {
+    display: none;
+}
+
+.filtersChoice {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.filtersChoice img{
+    max-width: 50%;
+    max-height: 50%;
+    /* border: solid black 1px; */
 }

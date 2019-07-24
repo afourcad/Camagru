@@ -1,0 +1,19 @@
+nav {
+	width:100vw;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+nav a{
+    text-align:center;
+    color: black;
+	height: auto;
+	font-size:4vw;
+	text-decoration: none;
+	padding: 5vw 5vw;
+}
+
+nav a:hover {
+    background-color: #e8d206;
+}
